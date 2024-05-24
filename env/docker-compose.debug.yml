@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  cw2:
+    image: cw2
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: ["sh", "-c", "pip install debugpy -t /tmp && python /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678 -m tensor "]
+    ports:
+      - 5678:5678
