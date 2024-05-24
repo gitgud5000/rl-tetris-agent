@@ -73,7 +73,7 @@ def train():
     """Policy Gradient training function for Tetris."""
 
     env = Tetris()
-    EPISODES = 3000
+    EPISODES = 2000
     MAX_STEPS = None
     GAMMA = 0.95
     render_every = 50
