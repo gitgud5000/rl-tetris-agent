@@ -14,6 +14,8 @@ The second agent uses a Reinforce Policy Gradient method to learn a policy to in
 * **Gradient Clipping** - Preventing gradient explosion.
 * **Entropy Regularisation** - Encouraging exploration by adding entropy to the loss. 
 
+### Hyperparameters
+
 | Hyperparameter  | Description                                       | Value                 |
 |-----------------|---------------------------------------------------|-----------------------|
 | EPISODES        | Number of episodes to run for training            | 5000                  |
