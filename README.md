@@ -34,6 +34,16 @@ The second agent uses a Reinforce Policy Gradient method to learn a policy to in
 | TARGET_UPDATE_FREQUENCY    | Frequency of updating the target network        | 10                            |
 
 
+### Imports
+
+```python
+from keras.models import Sequential, save_model, load_model, clone_model
+from keras.layers import Dense
+from collections import deque
+import numpy as np
+import random
+import tensorflow as tf
+```
 
 ## Reinforce Policy Gradient Agent
 * **Memory Deque** - Storing experiences (state, action, reward) with a maximum length of 10,000.
@@ -62,3 +72,19 @@ The second agent uses a Reinforce Policy Gradient method to learn a policy to in
 | LEARNING_RATE   | Learning rate for the optimizer                   | 0.001                 |
 | MODEL_SAVE_PATH | Path to the directory where the model will be saved| Path('models')        |
 | BATCH_SIZE      | Number of samples per batch used during training  | 128                   |
+
+
+
+### Imports
+
+```python
+import numpy as np
+import tensorflow as tf
+from keras.models import Sequential, save_model, load_model
+from keras.layers import Dense, Dropout
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.initializers import HeUniform
+from collections import deque
+import random
+import os
+```
