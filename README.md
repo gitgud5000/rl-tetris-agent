@@ -4,7 +4,7 @@ The first agent uses a Deep Q-Network (DQN) to learn a policy that maximizes the
 The second agent uses a Reinforce Policy Gradient method to learn a policy to increase the likelihood of taking actions that result in a higher return.
 
 
-## DQNAgent Summary
+## DQNAgent
 * **Neural Network** - To approximate the Q-value function. Consists of an input layer, one or more hidden layers, and an output layer.
 * **Target Network** - To stabilize training. Weights are periodically updated to match the main network's weights.
 * **Memory Buffer** - Stores experiences (state, next state, reward, done) in a memory buffer (`deque`).
